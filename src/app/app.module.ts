@@ -12,7 +12,9 @@ import { PoStorageModule } from '@po-ui/ng-storage';
 import { PoSyncModule } from '@po-ui/ng-sync';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent
+   ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, PoStorageModule.forRoot(), PoSyncModule],
   providers: [
