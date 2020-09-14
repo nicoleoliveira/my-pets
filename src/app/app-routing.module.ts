@@ -7,7 +7,6 @@ const routes: Routes = [
     path: '',
     resolve: { syncPrepared: SyncResolverService },
     children: [
-
       {
         path: 'home',
         loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
