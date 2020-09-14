@@ -58,5 +58,8 @@
     "plugins": {
       "cordova-plugin-network-information": {}
     }
+  },
+  "browser": {
+    "fs": false
   }
 }

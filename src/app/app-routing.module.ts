@@ -7,6 +7,7 @@ const routes: Routes = [
     path: '',
     resolve: { syncPrepared: SyncResolverService },
     children: [
+
       {
         path: 'home',
         loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
@@ -15,6 +16,10 @@ const routes: Routes = [
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'
+      },
+      {
+        path: 'medicines',
+        loadChildren: () => import('./pages/medicines/medicines.module').then( m => m.MedicinesModule)
       },
     ]
   }

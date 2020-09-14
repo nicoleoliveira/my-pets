@@ -33,6 +33,7 @@ export class HomePage implements OnDestroy {
 
   ngOnDestroy(): void {
     this.syncPrepared.unsubscribe();
+    this.onSyncSubscription.unsubscribe();
   }
 
   updatePets() {
