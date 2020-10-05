@@ -1,3 +1,12 @@
-<p>
-  medicines works!
-</p>
+<ion-list *ngIf="medicines$ | async as medicines">
+  <ion-list-header lines="inset">
+    <ion-label>Medicines</ion-label>
+  </ion-list-header>
+  <ion-item *ngFor="let medicine of medicines">
+    <ion-label>
+      <h2>{{ medicine.name }}</h2>
+      <h3>{{ medicine.next | date }}</h3>
+      <p>{{ medicine.pet.name }}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>

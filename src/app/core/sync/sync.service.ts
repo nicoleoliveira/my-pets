@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
+
 import { Observable, from, of } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
+
 import { PoNetworkType, PoSyncConfig, PoSyncService } from '@po-ui/ng-sync';
-import { schemas } from './schemas.constants';
 import { PoStorageService } from '@po-ui/ng-storage';
+import { schemas } from './schemas.constants';
 
 @Injectable({
   providedIn: 'root'
